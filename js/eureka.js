@@ -32,22 +32,42 @@
         }
     );
 
-
      $('.kill').click(function() {
          var parent = $(this).parent().parent();
 
-         console.log(parent.find('.lvl').html());
+         parent.addClass('editing');
+
+        // console.log(parent.find('.lvl').html());
          $('#reportTitle').html(function () {
             return   parent.find('.NM').html();
          });
+
      });
 
 
      $('#hide-spawned').click(function () {
          $('.spawned').toggle();
+
          $(this).text(($(this).text() === 'Hide Spawned') ?  'Show Spawned' :  'Hide Spawned');
      });
 
+    $('.copy-btn').on("click", function(){
+        var value = $(this).data('clipboard-text');
+
+        $('.notify-text').removeClass('notify-text');
+        $('#copy-text').html(function () {
+           return  value;
+        });
+
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(value).select();
+        document.execCommand("copy");
+        $temp.remove();
+    })
+
+
+    // $('#cancel-edit')
 
 
 })();

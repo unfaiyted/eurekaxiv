@@ -43,15 +43,15 @@
 
     <div class="row p-2 m-2">
         <div class="col-12">
-            <button type="button" class="btn btn-sm btn-secondary">Share</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Instance Link</button>
+            <button type="button" class="btn btn-sm btn-secondary copy-btn" data-clipboard-text="Panzu (118m) (http://eurekaxiv.us/ACAD)">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary copy-btn" data-clipboard-text="http://eurekaxiv.us/ABCD">Instance Link</button>
             <button type="button" id="hide-spawned" class="btn btn-sm btn-outline-secondary">Hide Spawned</button>
         </div>
     </div>
 
-    <div class="row p-2 m-2">
+    <div class="row p-2 m-2 notify-text">
         <div class="col-12">
-          Copied to clipboard: <span id="copy-text">http://eurkiaxiv.us/ABAD</span>
+          Copied to clipboard: <span id="copy-text"></span>
         </div>
     </div>
 
@@ -221,7 +221,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary">Report</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancel-edit">Cancel</button>
             </div>
         </div>
     </div>
@@ -249,9 +249,20 @@
     </div>
 
     <footer>
-        <p>FINAL FANTASY XIV ©2010 - 2018 SQUARE ENIX CO., LTD. FINAL FANTASY is a registered trademark of
-            Square Enix Holdings Co., Ltd.
-        </p>
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container">
+                <p class="navbar-text pull-left">© 2014 - Site Built By Faiyt Lee (Exodus)
+                </p>
+                <p class="btn pull-right">FINAL FANTASY XIV ©2010 - 2018 SQUARE ENIX CO., LTD. FINAL FANTASY is a registered trademark of
+                    Square Enix Holdings Co., Ltd.
+                </p>
+
+
+            </div>
+        </div>
+
+
+
     </footer>
 
 
