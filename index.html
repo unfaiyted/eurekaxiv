@@ -53,30 +53,19 @@
 
     <div class="row nm m-2 p-2 justify-content-center">
 
-
-        <!--<div class="card m-2">-->
-            <!--<h5 class="card-header">Featured</h5>-->
-            <!--<div class="card-body">-->
-                <!--<h5 class="card-title">Special title treatment</h5>-->
-                <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
-                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
-            <!--</div>-->
-        <!--</div>-->
-
-
-
         <div class="spawn rounded border p-2 m-2 col-md-3 col-lg-2 col-sm-5 col-12">
-            <div class="lvl">1</div>
-            <div class="NM">Sabotender Corrido</div>
+            <div class="header text-nowrap text-truncate">
+               <span class="lvl badge badge-pill badge-primary">1</span> <span class="NM">Sabotender Corrido</span>
+            </div>
             <div class="spawner">Flowering Sabotender</div>
             <div class="pos">(13.9, 21.9) (<a href="#" data-toggle="modal" data-target="#map">map</a>)</div>
             <div class="killed">ET 1:02</div>
             <div class="respawn">2 hours</div>
-            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#repot">Report Kill</button></div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
         </div>
         <div class="spawn rounded border p-2 m-2 col-md-3 col-lg-2 col-sm-5 col-12">
             <div class="lvl">2</div>
-            <div class="NM">Sabotender Corrido</div>
+            <div class="NM">Name two</div>
             <div class="spawner">Flowering Sabotender</div>
             <div class="pos">(13.9, 21.9) (map)</div>
             <div class="killed">ET 1:02</div>
@@ -85,7 +74,7 @@
         </div>
         <div class="spawn rounded border p-2 m-2 col-md-3 col-lg-2 col-sm-5 col-12">
             <div class="lvl">3</div>
-            <div class="NM">Sabotender Corrido</div>
+            <div class="NM">Name Three</div>
             <div class="spawner">Flowering Sabotender</div>
             <div class="pos">(13.9, 21.9) (map)</div>
             <div class="killed">ET 1:02</div>
@@ -94,7 +83,7 @@
         </div>
         <div class="spawn rounded border p-2 m-2 col-md-3 col-lg-2 col-sm-5 col-12">
             <div class="lvl">4</div>
-            <div class="NM">Sabotender Corrido</div>
+            <div class="NM">Other thing</div>
             <div class="spawner">Flowering Sabotender</div>
             <div class="pos">(13.9, 21.9) (map)</div>
             <div class="killed">ET 1:02</div>
@@ -148,7 +137,7 @@
             <div class="respawn">2 hours</div>
             <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
         </div>
-        <div class="spawn rounded border p-2 m-2 col-md-3 col-lg-2 col-sm-5 col-12">
+        <div class="spawn rounded border p-2 m-2 col-md-3 col-lg-2 col-sm-5 col-12 spawned-current">
             <div class="lvl">10</div>
             <div class="NM">Sabotender Corrido</div>
             <div class="spawner">Flowering Sabotender</div>
@@ -173,7 +162,7 @@
             <div class="pos">(13.9, 21.9) (map)</div>
             <div class="killed">ET 1:02</div>
             <div class="respawn">2 hours</div>
-            <div class="report"><button id="kill4"  class="btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
+            <div class="report"><button class="btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
         </div>
 
 </div>
@@ -183,20 +172,41 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Sabotender Corrido</h5>
+                <h5 class="modal-title" id="reportTitle"></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <img src="images/1.png" class="img-fluid">
-                <p>Report Kill Now</p>
-                <p>Report Kill at <input type=""></p>
-                <p>Not killed (invalid report)</p>
+
+
+             <div class="row">
+                <div class="col-sm-6 col-4"> <img src="images/1.png" class="img-fluid img-thumbnail rounded"></div>
+
+
+                <div class="col-sm-6 col-8">
+                    <p>Report Kill: </p>
+                    <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="options" id="option1" autocomplete="off" checked> Now
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option2" autocomplete="off"> 2 min ago
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> 5 min ago
+                        </label>
+                    </div>
+                </div>
+
+
+            </div>
+
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary">Save changes</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
             </div>
         </div>
     </div>
@@ -225,7 +235,7 @@
 
     <footer>
         <p>FINAL FANTASY XIV ©2010 - 2018 SQUARE ENIX CO., LTD. FINAL FANTASY is a registered trademark of
-            Square Enix Holdings Co., Ltd. All material used under license.
+            Square Enix Holdings Co., Ltd.
         </p>
     </footer>
 

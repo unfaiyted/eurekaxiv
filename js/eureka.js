@@ -21,7 +21,27 @@
         });
     }
 
-    var run = setInterval(updateTimer, 1000);
+    var runTime = setInterval(updateTimer, 1000);
+
+
+    $('.spawn').hover(function () {
+            $(this).css('background-color','#e1d7cf');
+
+        }, function () {
+            $(this).css('background-color','#FFF');
+        }
+    );
+
+
+     $('.kill').click(function() {
+         var parent = $(this).parent().parent();
+
+         console.log(parent.find('.lvl').html());
+         $('#reportTitle').html(function () {
+            return   parent.find('.NM').html();
+         });
+     });
+
 
 
 })();
