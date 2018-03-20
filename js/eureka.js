@@ -28,7 +28,7 @@
             $(this).css('background-color','#e1d7cf');
 
         }, function () {
-            $(this).css('background-color','#FFF');
+            $(this).hasClass("spawned") ? $(this).css('background-color','#ffaa73') :  $(this).css('background-color','#FFF');
         }
     );
 
@@ -40,6 +40,12 @@
          $('#reportTitle').html(function () {
             return   parent.find('.NM').html();
          });
+     });
+
+
+     $('#hide-spawned').click(function () {
+         $('.spawned').toggle();
+         $(this).text(($(this).text() === 'Hide Spawned') ?  'Show Spawned' :  'Hide Spawned');
      });
 
 

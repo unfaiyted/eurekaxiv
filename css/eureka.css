@@ -1,6 +1,14 @@
+.container p, span, div {
+    font-size: 12px;
+}
+
 footer p {
     font-size: 8px;
 }
 
+
+.spawned {
+    background-color: #ffaa73;
+}
 
 
