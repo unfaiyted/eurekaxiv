@@ -1,0 +1,94 @@
+[
+  {
+    "level": 1,
+    "name": "Sabotender Corrido",
+    "spawned-by": "Flowering Sabotender",
+    "pos": [
+      {
+        "x": 13.9,
+        "y": 21.9
+      }],
+    "killed": false,
+    "killed-time": 0,
+    "respawn-in-min": 120,
+    "affinity": [{
+      "def": "fire",
+      "atk": "water",
+    }],
+    "exp": 2500
+  },
+  {
+    "level": 2,
+    "name": "The Lord Of Anemos",
+    "spawned-by": "Sea Bishop",
+    "pos": [
+      {
+        "x": 29.7,
+        "y": 27.1
+      }],
+    "killed": false,
+    "killed-time": 0,
+    "respawn-in-min": 120,
+    "affinity": [{
+      "def": "fire",
+      "atk": "water",
+    }],
+    "exp": 2500
+  },
+  {
+    "level": 3,
+    "name": "Teles",
+    "spawned-by": "Anemos Harpeia",
+    "pos": [
+      {
+        "x": 25.6,
+        "y": 27.4
+      }],
+    "killed": false,
+    "killed-time": 0,
+    "respawn-in-min": 120,
+    "affinity": [{
+      "def": "fire",
+      "atk": "water",
+    }],
+    "exp": 2500
+  },
+  {
+    "level": 4,
+    "name": "Sabotender Corrido",
+    "spawned-by": "Flowering Sabotender",
+    "pos": [
+      {
+        "x": 13.9,
+        "y": 21.9
+      }],
+    "killed": false,
+    "killed-time": 0,
+    "respawn-in-min": 120,
+    "affinity": [{
+      "def": "fire",
+      "atk": "water",
+    }],
+    "exp": 2500
+  },
+}]
+
+//
+//lvl	NM	Spawned By	POS	Killed At	Respawn
+//4	The Emperor Of Anemos	Darner	(17.2, 22.2)
+//5	Callisto	Val Bear	(25.5, 22.3)
+//6	Number	Pneumaflayer	(23.5, 22.7)
+//7	Jahannam	Typhoon Sprite	(17.7, 18.6)
+//8	Amemet	Abraxas	(15, 15.6)
+//9	Caym	Stalker Ziz	(13.8, 12.5)
+//10	Bombadeel	Traveling Gourmand	(28.3, 20.4)
+//11	Serket	Khor Claw	(24.8, 17.9)
+//12	Judgmental Julika	Henbane	(21.9, 15.6)
+//13	The White Rider	Duskfall Dullahan	(20.3, 13)
+//14	Polyphemus	Monoeye	(26.4, 14.3)
+//15	Simurgh's Strider	Old World Zu	(28.6, 13)
+//16	King Hazmat	Anemos Anala	(35.3, 18.3)
+//17	Fafnir	Fossil Dragon	(35.5, 21.5)
+//18	Amarok	Voidscale	(7.6, 18.2)
+//19	Lamashtu	Val Specter	(7.7, 23.3)
+//20	Pazuzu	Shadow Wraith	(7.4, 21.7)
