@@ -1,30 +1,52 @@
 "use strict";
 (function() {
 
-    // Convert current time to Eorza time return
+    // Convert current time to Eorzea time return
     function eTimeCalc() {
-        var serverTime = new Date();
-        return { "hour": 1, "minute": 2, "seconds": 3 };
+        // var d = new Date();
+        // var m = new Date();
+        // var sinceMidnight =  d - m.setHours(0,0,0,0);
+        //
+        //
+        // //console.log(sinceMidnight);
+        //
+        // var minutes = Math.floor(sinceMidnight / 60000);
+        // var seconds = ((sinceMidnight % 60000) / 1000).toFixed(0);
+        // //console.log( minutes + ":" + (seconds < 10 ? '0' : '') + seconds);
+        //
+        // var totalSeconds = (minutes*60)+seconds;
+        // var eMinutes = (totalSeconds/2.916666);
+        //
+        // console.log(eMinutes);
+        //
+        //
+        // var eMinute = Math.floor(eMinutes % 60);
+        // var totalHour = eMinutes / 60;
+        // var eHour = totalHour % 24;
+        //
+        //
+        // console.log(eHour + ':' + eMinutes);
+
+
+        var localEpoch = (new Date()).getTime();
+        var epoch = localEpoch * 20.571428571428573;
+        var eMinute = parseInt((epoch / (1000 * 60)) % 60);
+        var eHour = parseInt((epoch / (1000 * 60 * 60)) % 24);
+
+
+        return { "hour": eHour , "minute": eMinute};
     }
 
     function updateTimer() {
-        var time = eTimeCalc();
-
-        console.log('test');
+        var t = eTimeCalc();
 
         $('#etime').html(function() {
-            return '123';
+            return  t.hour +':'+ (t.minute < 10 ? '0' : '') + t.minute ;
         });
     }
 
-    // 2 11/12 seconds = 1 minute Eorzea
-    // 2min 55s = 1 hour
-    // 70m = 24 hours
-
     var runTime = eTimeCalc();
-
     var run = setInterval(updateTimer, 1000);
-    console.log('test');
 
 
 })();
