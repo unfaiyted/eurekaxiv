@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Eureka!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,67 +17,200 @@
 
 <h1>Eureka! I've got it!</h1>
 
-    <ul>
-        <li>Leave Instance</li>
-        <li>Share</li>
-        <li>Settings</li>
-        <li><span>ET</span> <span id="etime"></span> </li>
-    </ul>
+
+    <nav>
+        <ul>
+            <li>Leave Instance</li>
+            <li>Share</li>
+            <li>Settings</li>
+            <li><span>ET</span> <span id="etime"></span> </li>
+        </ul>
+    </nav>
 
 
     <div class="row">
         <div class="col-12">
-            <button>Export to Clip</button>
-            <button>Share</button>
+            <button>Share Instance Data</button>
+            <button>Instance Link</button>
             <button>Style Change</button>
         </div>
     </div>
 
-    <div class="row nm">
-        <div class="col-md-3 col-sm-6 col-12">
+    <div class="row nm m-2 p-2">
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
             <div class="lvl">1</div>
             <div class="NM">Sabotender Corrido</div>
             <div class="spawner">Flowering Sabotender</div>
-            <div class="pos">(13.9, 21.9) (map)</div>
+            <div class="pos">(13.9, 21.9) (<a href="#" data-toggle="modal" data-target="#map">map</a>)</div>
             <div class="killed">ET 1:02</div>
             <div class="respawn">2 hours</div>
-            <div class="report">Report Kill</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#repot">Report Kill</button></div>
         </div>
-        <div class="col-md-3 col-sm-6 col-12">
-            <div class="lvl">1</div>
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">2</div>
             <div class="NM">Sabotender Corrido</div>
             <div class="spawner">Flowering Sabotender</div>
             <div class="pos">(13.9, 21.9) (map)</div>
             <div class="killed">ET 1:02</div>
             <div class="respawn">2 hours</div>
-            <div class="report">Report Kill</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
         </div>
-        <div class="col-md-3 col-sm-6 col-12">
-            <div class="lvl">1</div>
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">3</div>
             <div class="NM">Sabotender Corrido</div>
             <div class="spawner">Flowering Sabotender</div>
             <div class="pos">(13.9, 21.9) (map)</div>
             <div class="killed">ET 1:02</div>
             <div class="respawn">2 hours</div>
-            <div class="report">Report Kill</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
         </div>
-        <div class="col-md-3 col-sm-6 col-12">
-            <div class="lvl">1</div>
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">4</div>
             <div class="NM">Sabotender Corrido</div>
             <div class="spawner">Flowering Sabotender</div>
             <div class="pos">(13.9, 21.9) (map)</div>
             <div class="killed">ET 1:02</div>
             <div class="respawn">2 hours</div>
-            <div class="report">Report Kill</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
+        </div>
+
+
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">5</div>
+            <div class="NM">Sabotender Corrido</div>
+            <div class="spawner">Flowering Sabotender</div>
+            <div class="pos">(13.9, 21.9) (map)</div>
+            <div class="killed">ET 1:02</div>
+            <div class="respawn">2 hours</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
+        </div>
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">6</div>
+            <div class="NM">Sabotender Corrido</div>
+            <div class="spawner">Flowering Sabotender</div>
+            <div class="pos">(13.9, 21.9) (map)</div>
+            <div class="killed">ET 1:02</div>
+            <div class="respawn">2 hours</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
+        </div>
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">7</div>
+            <div class="NM">Sabotender Corrido</div>
+            <div class="spawner">Flowering Sabotender</div>
+            <div class="pos">(13.9, 21.9) (map)</div>
+            <div class="killed">ET 1:02</div>
+            <div class="respawn">2 hours</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
+        </div>
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">8</div>
+            <div class="NM">Sabotender Corrido</div>
+            <div class="spawner">Flowering Sabotender</div>
+            <div class="pos">(13.9, 21.9) (map)</div>
+            <div class="killed">ET 1:02</div>
+            <div class="respawn">2 hours</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
+        </div>
+
+
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">9</div>
+            <div class="NM">Sabotender Corrido</div>
+            <div class="spawner">Flowering Sabotender</div>
+            <div class="pos">(13.9, 21.9) (map)</div>
+            <div class="killed">ET 1:02</div>
+            <div class="respawn">2 hours</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
+        </div>
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">10</div>
+            <div class="NM">Sabotender Corrido</div>
+            <div class="spawner">Flowering Sabotender</div>
+            <div class="pos">(13.9, 21.9) (map)</div>
+            <div class="killed">ET 1:02</div>
+            <div class="respawn">2 hours</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
+        </div>
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">11</div>
+            <div class="NM">Sabotender Corrido</div>
+            <div class="spawner">Flowering Sabotender</div>
+            <div class="pos">(13.9, 21.9) (map)</div>
+            <div class="killed">ET 1:02</div>
+            <div class="respawn">2 hours</div>
+            <div class="report"><button class="kill btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
+        </div>
+        <div class="spawn rounded border p-2 col-md-4 col-lg-3 col-sm-6 col-12">
+            <div class="lvl">12</div>
+            <div class="NM">Sabotender Corrido</div>
+            <div class="spawner">Flowering Sabotender</div>
+            <div class="pos">(13.9, 21.9) (map)</div>
+            <div class="killed">ET 1:02</div>
+            <div class="respawn">2 hours</div>
+            <div class="report"><button id="kill4"  class="btn btn-primary" data-toggle="modal" data-target="#report">Report Kill</button></div>
+        </div>
+
+</div>
+
+
+    <!--- Report Modal -->
+<div class="modal fade" id="report" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sabotender Corrido</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="images/1.png" class="img-fluid">
+                <p>Report Kill Now</p>
+                <p>Report Kill at <input type=""></p>
+                <p>Not killed (invalid report)</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
+</div>
 
+<!-- Map Modal -->
+    <div class="modal fade" id="map" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sabotender Corrido</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/1.png" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>FINAL FANTASY XIV ©2010 - 2018 SQUARE ENIX CO., LTD. FINAL FANTASY is a registered trademark of
+            Square Enix Holdings Co., Ltd. All material used under license.
+        </p>
+    </footer>
 
 
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/eureka.js"></script>
